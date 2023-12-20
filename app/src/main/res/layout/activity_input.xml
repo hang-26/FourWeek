@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chương trình tính chỉ số BMI"
+        android:textSize="20sp"
+        android:textColor="@color/red"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="200dp"/>
+    <TextView
+        android:id="@+id/textViewHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewHeader"
+        android:layout_margin="20dp"
+        android:text="Chiều cao"/>
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewHeader"
+        android:layout_toRightOf="@id/textViewHeight"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:hint="Nhập chiu cao"/>
+    <TextView
+        android:id="@+id/textViewWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewHeight"
+        android:layout_margin="20dp"
+        android:text="Cân nặng"/>
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewHeight"
+        android:layout_toRightOf="@id/textViewWeight"
+        android:layout_marginEnd="20dp"
+        android:minHeight="48dp"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:hint="Nhập cân nặng"/>
+    <Button
+        android:id="@+id/buttonResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextWeight"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="60dp"
+        android:text="Đánh giá"/>
+    <TextView
+        android:id="@+id/textViewInforResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonResult"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Kết quả trước đó"
+        />
+    <EditText
+        android:id="@+id/editTextBeforResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewInforResult"
+        android:layout_margin="20dp"
+        android:hint="Kết quả trước đó"
+        android:textSize="20sp"
+        />
+
+</RelativeLayout>

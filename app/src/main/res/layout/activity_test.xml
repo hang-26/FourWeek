@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".test.TestActivity">
+    <Button
+        android:id="@+id/btnOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Member Class"
+        android:layout_margin="@dimen/dp10"/>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:text="Content"/>
+    <Button
+        android:id="@+id/btnTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Member Class"
+        android:layout_margin="@dimen/dp10"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:text="Content"/>
+    <Button
+        android:id="@+id/btnThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Member Class"
+        android:layout_margin="@dimen/dp10"/>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:text="Content"/>
+    <Button
+        android:id="@+id/btnFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Member Class"
+        android:layout_margin="@dimen/dp10"/>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:text="Content"/>
+    <Button
+        android:id="@+id/btnFive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Member Class"
+        android:onClick="handleClick"
+        android:layout_margin="@dimen/dp10"/>
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:text="Content"/>
+
+</LinearLayout>

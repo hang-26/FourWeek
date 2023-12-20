@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+    <TextView
+        android:id="@+id/textViewResulf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kết quả là"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp200"/>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewResulf"
+        android:text="Kết quả BMI là: "
+        android:textSize="15sp"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginStart="@dimen/dp20"/>
+    <EditText
+        android:id="@+id/editTexResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView1"
+        android:layout_below="@+id/textViewResulf"
+        android:layout_margin="10dp"
+        android:hint="Kết quả"/>
+    <TextView
+        android:id="@+id/textViewCate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTexResult"
+        android:layout_margin="@dimen/dp20"
+        android:text="Thuộc loại:"/>
+    <EditText
+        android:id="@+id/editTextCate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTexResult"
+        android:layout_toRightOf="@+id/textViewCate"
+        android:layout_margin="10dp"
+        android:hint="Thuộc loại:"/>
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewCate"
+        android:layout_margin="@dimen/dp20"
+        android:text="Quay lại"/>
+
+</RelativeLayout>
