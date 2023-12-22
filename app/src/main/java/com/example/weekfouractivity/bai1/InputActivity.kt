@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import com.example.weekfouractivity.R
 import com.example.weekfouractivity.ResultActivity
 import com.example.weekfouractivity.databinding.ActivityBai2Binding
@@ -21,17 +22,10 @@ class InputActivity : AppCompatActivity() {
             intent()
         }
 
+
+
     }
-//    private inner class HandleClick: View.OnClickListener {
-//        override fun onClick(arg0: View) {
-//            val height = binding.editTextHeight.text.toString()
-//            val weight = binding.editTextWeight.text.toString()
-//            var result:Float = weight.toFloat()/(height.toFloat()*height.toFloat()*0.0001f)
-////            binding.editTextBeforResult.setText(result.toString())
-//            return result
-//
-//        }
-//    }
+
     fun intent(){
         val height = binding.editTextHeight.text.toString()
         val weight = binding.editTextWeight.text.toString()
@@ -44,10 +38,16 @@ class InputActivity : AppCompatActivity() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if(resultCode== RESULT_OK){
-//            binding.editTextBeforResult.setText(d)
-        }else{
-            binding.editTextBeforResult.setText("không có kết quả")
+        when(requestCode){
+            REQUEST_CODE->  {
+                if(resultCode== RESULT_OK){
+                    if (data != null) {
+                        binding.editTextBeforResult.setText(data.getStringExtra(ResultActivity2.KEY_RESULT))
+                    }
+                }
+            }
+
         }
+
     }
 }

@@ -30,6 +30,7 @@
         android:layout_toRightOf="@+id/textView1"
         android:layout_below="@+id/textViewResulf"
         android:layout_margin="10dp"
+        android:minHeight="48dp"
         android:hint="Kết quả"/>
     <TextView
         android:id="@+id/textViewCate"
@@ -38,14 +39,21 @@
         android:layout_below="@+id/editTexResult"
         android:layout_margin="@dimen/dp20"
         android:text="Thuộc loại:"/>
+
     <EditText
         android:id="@+id/editTextCate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editTexResult"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_toRightOf="@+id/textViewCate"
-        android:layout_margin="10dp"
-        android:hint="Thuộc loại:"/>
+        android:minHeight="48dp"
+        android:hint="Thuộc loại:" />
+
     <Button
         android:id="@+id/buttonBack"
         android:layout_width="match_parent"

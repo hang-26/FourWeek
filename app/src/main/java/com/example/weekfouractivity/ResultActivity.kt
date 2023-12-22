@@ -6,7 +6,7 @@ import android.os.Bundle
 import com.example.weekfouractivity.databinding.ActivityResultBinding
 
 class ResultActivity : AppCompatActivity() {
-    private lateinit var binding:ActivityResultBinding
+    private lateinit var binding: ActivityResultBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityResultBinding.inflate(layoutInflater)
@@ -14,18 +14,18 @@ class ResultActivity : AppCompatActivity() {
         var i = intent
         var result = i.getStringExtra("Result")
         binding.editTexResult.setText(result)
-        if (result!=null){
-            var cate=result.toFloat()
-            if (cate<18.5){
+        if (result != null) {
+            var cate = result.toFloat()
+            if (cate < 18.5) {
                 binding.editTextCate.setText("Thiếu cân")
             }
-            if (cate.equals(18.51 .. 24.9)  ){
+            if (cate.equals(18.51..24.9)) {
                 binding.editTextCate.setText("Khỏe mạnh")
             }
-            if (cate.equals(25..30)){
+            if (cate.equals(25..30)) {
                 binding.editTextCate.setText("Thừa cân")
             }
-            if (cate>30){
+            if (cate > 30) {
                 binding.editTextCate.setText("Béo phì")
             }
         }
